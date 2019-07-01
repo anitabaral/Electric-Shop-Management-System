@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1050.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electricshopmanagement.LoginPageController">
+    <children>
+        <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="1050.0" prefWidth="1400.0">
+            <children>
+                <ImageView fitHeight="782.0" fitWidth="1384.0" layoutX="-10.0" layoutY="-10.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../images/image2.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="409.0" layoutY="73.0" text="Electric Shop Management System" textFill="#e1e1e1">
+                    <font>
+                        <Font name="System Bold" size="33.0" />
+                    </font>
+                </Label>
+                <GridPane layoutX="467.0" layoutY="171.0" prefHeight="163.0" prefWidth="466.0">
+                    <children>
+                        <Label prefHeight="35.0" prefWidth="151.0" text="UserName" textFill="#0c085b">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="167.0" text="Password" textFill="#0c085b" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+            
+                        <TextField fx:id="txtUsername" prefHeight="37.0" prefWidth="265.0" promptText="Username" GridPane.columnIndex="1">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="txtPassword" prefHeight="41.0" prefWidth="246.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </PasswordField>
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="189.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="246.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="94.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+                <Button fx:id="btnLogin" layoutX="548.0" layoutY="381.0" mnemonicParsing="false" onAction="#handleLoginButtonPressed" prefHeight="51.0" prefWidth="269.0" text="Login" textFill="#0c085b">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
